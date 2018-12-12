@@ -260,7 +260,7 @@ export default class ViewPager extends PureComponent {
     }
 
     keyExtractor (item, index) {
-        return index;
+        return `${item}-${index}`;
     }
 
     renderRow ({ item, index }) {
